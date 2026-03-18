@@ -1,9 +1,5 @@
 import { useRouter } from 'next/router'
 
-<Link href="/inventory" className={linkClass('/inventory')}>
-  Inventory
-</Link>
-
 export default function Layout({ children }) {
   const router = useRouter()
 
