@@ -1,49 +1,42 @@
+// pages/invoice.js
 import { useState } from 'react'
-import { supabase } from '../lib/supabase'
 import jsPDF from "jspdf"
 
 export default function Invoice() {
   const [total, setTotal] = useState(0)
 
-  async function createInvoice() {
-    let { data } = await supabase
-      .from('invoices')
-      .insert([{ total }])
-      .select()
-
-    alert("Invoice Created: " + data[0].id)
-  }
-
-  // ✅ STEP 6: PDF FUNCTION HERE
   function generatePDF() {
     const doc = new jsPDF()
-
     doc.text("Invoice", 20, 20)
-    doc.text("Customer: Ravi", 20, 40)
-    doc.text("Total: ₹" + total, 20, 60)
-
+    doc.text("Total: ₹" + total, 20, 40)
     doc.save("invoice.pdf")
   }
 
   return (
     <div>
-      <h1>Create Invoice</h1>
+      <h1 className="text-2xl font-bold mb-4">Create Invoice</h1>
 
-      <input
-        type="number"
-        placeholder="Total"
-        onChange={(e) => setTotal(e.target.value)}
-      />
+      <div className="bg-white p-6 rounded-xl shadow max-w-md">
+        <input
+          type="number"
+          placeholder="Enter amount"
+          className="border p-2 w-full rounded mb-4"
+          onChange={(e) => setTotal(e.target.value)}
+        />
 
-      <br /><br />
+        <button
+          className="bg-blue-600 text-white px-4 py-2 rounded mr-2"
+        >
+          Save
+        </button>
 
-      <button onClick={createInvoice}>
-        Save Invoice
-      </button>
-
-      <button onClick={generatePDF} style={{ marginLeft: "10px" }}>
-        Download PDF
-      </button>
+        <button
+          onClick={generatePDF}
+          className="bg-green-600 text-white px-4 py-2 rounded"
+        >
+          Download PDF
+        </button>
+      </div>
     </div>
   )
 }

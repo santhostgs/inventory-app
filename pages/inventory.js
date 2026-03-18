@@ -14,23 +14,29 @@ export default function Inventory() {
     setProducts(data)
   }
 
-  async function addProduct() {
-    await supabase.from('products').insert([
-      { name: "Camera", price: 5000, stock: 10 }
-    ])
-    fetchProducts()
-  }
-
   return (
     <div>
-      <h1>Inventory</h1>
-      <button onClick={addProduct}>Add Product</button>
+      <h1 className="text-2xl font-bold mb-4">Inventory</h1>
 
-      {products.map(p => (
-        <div key={p.id}>
-          {p.name} - ₹{p.price} - Stock: {p.stock}
-        </div>
-      ))}
+      <table className="w-full bg-white rounded-xl shadow">
+        <thead className="bg-gray-100">
+          <tr>
+            <th className="p-3 text-left">Name</th>
+            <th className="p-3">Price</th>
+            <th className="p-3">Stock</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {products.map(p => (
+            <tr key={p.id} className="border-t">
+              <td className="p-3">{p.name}</td>
+              <td className="p-3 text-center">₹{p.price}</td>
+              <td className="p-3 text-center">{p.stock}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   )
 }
