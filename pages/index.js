@@ -24,6 +24,9 @@ export default function Dashboard() {
           <p className="text-gray-500">Pending</p>
           <h2 className="text-xl font-bold">₹5,000</h2>
         </div>
+<div className="bg-red-500 text-white p-4">
+  Tailwind Test
+</div>
       </div>
     </div>
   )
