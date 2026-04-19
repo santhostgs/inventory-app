@@ -23,7 +23,8 @@ export default function Layout({ children }) {
 
         <nav className="space-y-2">
           <a href="/" className={linkClass('/')}>🏠 Dashboard</a>
-          <a href="/inventory" className={linkClass('/inventory')}>📦 Inventory</a>
+          <a href="/products" className={linkClass('/products')}>📦 Products</a>
+          <a href="/customers" className={linkClass('/customers')}>👥 Customers</a>
           <a href="/invoice" className={linkClass('/invoice')}>🧾 Invoices</a>
         </nav>
       </div>
