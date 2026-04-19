@@ -82,44 +82,41 @@ export default function CreateCustomer() {
         <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-4 sm:p-5 md:p-6">
           <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
             {/* Basic Information */}
-            <div>
-              <h2 className="font-semibold text-sm sm:text-base mb-3 sm:mb-4">Basic Information</h2>
-              <div className="space-y-3 sm:space-y-4">
-              <FormInput
-                label="Customer Name"
-                name="name"
-                placeholder="e.g., Acme Corporation"
-                value={formData.name}
-                onChange={handleChange}
-                error={errors.name}
-                required
-              />
+             <div>
+               <h2 className="font-semibold text-sm sm:text-base mb-3 sm:mb-4">Basic Information</h2>
+               <div className="space-y-3 sm:space-y-4">
+                 <FormInput
+                   label="Customer Name"
+                   name="name"
+                   placeholder="e.g., Acme Corporation"
+                   value={formData.name}
+                   onChange={handleChange}
+                   error={errors.name}
+                   required
+                 />
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
-                <FormInput
-                  label="Email"
-                  name="email"
-                  type="email"
-                  placeholder="customer@example.com"
-                  value={formData.email}
-                  onChange={handleChange}
-                  error={errors.email}
-                />
+                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
+                   <FormInput
+                     label="Email"
+                     name="email"
+                     type="email"
+                     placeholder="customer@example.com"
+                     value={formData.email}
+                     onChange={handleChange}
+                     error={errors.email}
+                   />
 
-                <FormInput
-                  label="Phone"
-                  name="phone"
-                  placeholder="9876543210"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  error={errors.phone}
-                />
-              </div>
-            </div>
-          </div>
-
-            </div>
-          </div>
+                   <FormInput
+                     label="Phone"
+                     name="phone"
+                     placeholder="9876543210"
+                     value={formData.phone}
+                     onChange={handleChange}
+                     error={errors.phone}
+                   />
+                 </div>
+               </div>
+             </div>
 
           {/* Address Information */}
           <div>
@@ -231,11 +228,12 @@ export default function CreateCustomer() {
             >
               {loading ? 'Creating...' : 'Create Customer'}
             </button>
-          </div>
-        </form>
-      </div>
+            </div>
+          </form>
+        </div>
 
-      <Toast />
+        <Toast />
+      </div>
     </div>
   );
 }
