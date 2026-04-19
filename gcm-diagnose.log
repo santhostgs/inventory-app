@@ -1,0 +1,191 @@
+﻿Diagnose log at 2026-04-19T14:28:00Z
+
+AppPath: C:\Program Files\Git\mingw64\bin\git-credential-manager.exe
+InstallDir: C:\Program Files\Git\mingw64\bin\
+Version: 2.6.1+786ab03440ddc82e807a97c0e540f5247e44cec6
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: Windows
+OSVersion: 10.0 (build 19045)
+Reading environment variables... OK
+ Variables:
+HOMEPATH=\Users\Sudha
+DriverData=C:\Windows\System32\Drivers\DriverData
+COMPUTERNAME=DESKTOP-Q3U6I6Q
+GIT_TRACE2_PARENT_SID=24a36f19-061f-4e33-8450-7191b858ea5f
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+OneDrive=C:\Users\Sudha\OneDrive
+VSCODE_INJECTION=1
+PROCESSOR_REVISION=4e03
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL
+GIT_ASKPASS=c:\Users\Sudha\AppData\Roaming\Code\User\globalStorage\vscode.git\askpass\493597c785d4c5cb\askpass.sh
+USERDOMAIN_ROAMINGPROFILE=DESKTOP-Q3U6I6Q
+TEMP=C:\Users\Sudha\AppData\Local\Temp
+LOCALAPPDATA=C:\Users\Sudha\AppData\Local
+MSYSTEM=MINGW64
+TERM=xterm-256color
+COLORTERM=truecolor
+USERDOMAIN=DESKTOP-Q3U6I6Q
+ProgramFiles(x86)=C:\Program Files (x86)
+Path=C:/Program Files/Git/mingw64/libexec/git-core;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Sudha\bin;c:\Users\Sudha\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\Sudha\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Sudha\AppData\Local\Microsoft\WindowsApps;C:\Users\Sudha\AppData\Roaming\npm;C:\Users\Sudha\AppData\Local\Programs\Microsoft VS Code\bin
+TERM_PROGRAM=vscode
+PROCESSOR_LEVEL=6
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 78 Stepping 3, GenuineIntel
+TMPDIR=C:\Users\Sudha\AppData\Local\Temp
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=
+TERM_PROGRAM_VERSION=1.116.0
+VSCODE_GIT_ASKPASS_MAIN=c:\Users\Sudha\AppData\Roaming\Code\User\globalStorage\vscode.git\askpass\493597c785d4c5cb\askpass-main.js
+PSModulePath=C:\Users\Sudha\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+PUBLIC=C:\Users\Public
+NUMBER_OF_PROCESSORS=4
+CommonProgramFiles=C:\Program Files (x86)\Common Files
+VSCODE_NONCE=c87ca277-60d3-4d09-95c2-c731ca0f89bd
+VSCODE_GIT_IPC_HANDLE=\\.\pipe\vscode-git-e264d43eb2-sock
+CHROME_CRASHPAD_PIPE_NAME=\\.\pipe\crashpad_8836_CHRYYLFKEWZTAIIJ
+PLINK_PROTOCOL=ssh
+ProgramData=C:\ProgramData
+ProgramW6432=C:\Program Files
+ProgramFiles=C:\Program Files (x86)
+VSCODE_STABLE=1
+VSCODE_GIT_ASKPASS_NODE=C:\Users\Sudha\AppData\Local\Programs\Microsoft VS Code\Code.exe
+TMP=C:\Users\Sudha\AppData\Local\Temp
+HOME=C:\Users\Sudha
+SystemRoot=C:\Windows
+CommonProgramW6432=C:\Program Files\Common Files
+ZES_ENABLE_SYSMAN=1
+LOGONSERVER=\\DESKTOP-Q3U6I6Q
+GIT_EXEC_PATH=C:/Program Files/Git/mingw64/libexec/git-core
+APPDATA=C:\Users\Sudha\AppData\Roaming
+HOMEDRIVE=C:
+VSCODE_A11Y_MODE=0
+USERNAME=Sudha
+PROCESSOR_ARCHITEW6432=AMD64
+PROCESSOR_ARCHITECTURE=x86
+USERPROFILE=C:\Users\Sudha
+OS=Windows_NT
+ComSpec=C:\Windows\system32\cmd.exe
+SystemDrive=C:
+windir=C:\Windows
+LANG=en_US.UTF-8
+ALLUSERSPROFILE=C:\ProgramData
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is 'C:\Users\Sudha\AppData\Local\Temp\'...
+Checking basic file I/O...
+Writing to temporary file 'C:\Users\Sudha\AppData\Local\Temp\8cf1467683411529b6955c4a'... OK
+Reading from temporary file 'C:\Users\Sudha\AppData\Local\Temp\8cf1467683411529b6955c4a'... OK
+Deleting temporary file 'C:\Users\Sudha\AppData\Local\Temp\8cf1467683411529b6955c4a'... OK
+Testing IFileSystem instance...
+UserHomePath: C:\Users\Sudha
+UserDataDirectoryPath: C:\Users\Sudha\.gcm
+GetCurrentDirectory(): E:\Projects\inventory-app
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: True
+Exception: None
+Log:
+Checking networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com...Sending HEAD request to https://example.com... OK
+ OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:59919/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.52.0.windows.1'
+Locating current repository...Git repository at 'E:/Projects/inventory-app/.git'
+ OK
+Listing all Git configuration... OK
+Git configuration:
+file:C:/Program Files/Git/etc/gitconfig	diff.astextplain.textconv=astextplain
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.required=true
+file:C:/Program Files/Git/etc/gitconfig	http.sslbackend=schannel
+file:C:/Program Files/Git/etc/gitconfig	core.autocrlf=true
+file:C:/Program Files/Git/etc/gitconfig	core.fscache=true
+file:C:/Program Files/Git/etc/gitconfig	core.symlinks=false
+file:C:/Program Files/Git/etc/gitconfig	pull.rebase=false
+file:C:/Program Files/Git/etc/gitconfig	credential.helper=manager
+file:C:/Program Files/Git/etc/gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:C:/Program Files/Git/etc/gitconfig	init.defaultbranch=master
+file:C:/Users/Sudha/.gitconfig	user.email=santhos.tgs@gmail.com
+file:C:/Users/Sudha/.gitconfig	user.name=santhostgs
+file:C:/Users/Sudha/.gitconfig	credential.helper=
+file:C:/Users/Sudha/.gitconfig	credential.helper=C:/Program\ Files/Git/mingw64/bin/git-credential-manager.exe
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=false
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	core.symlinks=false
+file:.git/config	core.ignorecase=true
+file:.git/config	remote.origin.url=https://github.com/santhostgs/inventory-app.git
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+file:.git/config	branch.main.remote=origin
+file:.git/config	branch.main.merge=refs/heads/main
+file:.git/config	branch.main.vscode-merge-base=origin/main
+file:.git/config	user.name=santhostgs
+file:.git/config	user.email=santhos.tgs@gmail.com
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: True
+Exception: None
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential... OK
+Reading test credential... OK
+Deleting test credential... OK
+
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker is not enabled.
+Flow type is: Auto
+Gathering MSAL token cache data... OK
+CacheDirectory: C:\Users\Sudha\AppData\Local\.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: C:\Users\Sudha\AppData\Local\.IdentityService\msal.cache
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: True
+Exception: None
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint... OK
+
